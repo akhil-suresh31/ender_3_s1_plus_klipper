@@ -10,6 +10,7 @@ A step-by-step guide to setting up Klipper on a bare Raspberry Pi for the Ender 
 - **Mainsail:** https://docs.mainsail.xyz/
 - **Fluidd:** https://docs.fluidd.xyz/
 - **Raspberry Pi Imager (OS):** https://www.raspberrypi.com/software/
+- **KIAUH:** https://github.com/dw-0/kiauh
 - **Video Guide:** https://www.youtube.com/watch?v=N41JY1Gukuk
 
 ---
@@ -102,5 +103,11 @@ We'll be using [KIAUH](https://github.com/dw-0/kiauh) (Klipper Installation And 
    - In **Fluidd**: Go to the **Configuration** section (files icon on the left), navigate to the `config` folder, and click **Upload** to add the `printer.cfg`.
 
    This is the pre-configured config for the Ender 3 S1 Plus.
+
+4. **Restart Klipper** to apply the new config:
+   - In the web UI, click the **"Firmware Restart"** button (top-right corner in both Mainsail and Fluidd), or run:
+     ```bash
+     sudo service klipper restart
+     ```
 
 ---
